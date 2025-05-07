@@ -1,2 +1,1 @@
-# react
-리액트(v17) 공부
+# React + TypeScript + Vite
