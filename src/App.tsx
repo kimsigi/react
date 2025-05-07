@@ -1,5 +1,6 @@
 import Day1App from "./components/day1/Day1App";
 import Day2App from "./components/day2/Day2App";
+import Day3App from "./components/day3/Day3App";
 
 export default function App() {
   return (
@@ -8,6 +9,8 @@ export default function App() {
       <Day1App />
       <hr /><hr />
       <Day2App />
+      <hr /><hr />
+      <Day3App />
       <hr /><hr />
     </>
   )
