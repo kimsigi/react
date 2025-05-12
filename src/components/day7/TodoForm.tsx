@@ -23,11 +23,9 @@ export default function TodoForm() {
             </form>
 
             <ul>
-                {list.map((item, index) => (
-                    <li key={index}>
-                        {item}
-                    </li>
-                ))}
+                {list.map((item, index) => {
+                    return <li key={index}>{item}</li>
+                })}
             </ul>
         </div>
     );
