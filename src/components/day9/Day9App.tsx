@@ -3,10 +3,16 @@ import UserContext from "./UserContext";
 import Profile from "./Profile";
 import Settings from "./Settings";
 import ThemeContext from "./ThemeContext";
+import ThemeToggle from "./ThemeToggle";
+import ThemeBox from "./ThemeBox";
+import { AuthContext } from "./AuthContext";
+import AuthStatus from "./AuthStatus";
+import AuthButtons from "./AuthButtons";
 
 export default function Day9App() {
     const [user, setUser] = useState({name: "Pyeong sik", age: 37});
     const [theme, setTheme] = useState('light');
+    const [loginUser, setLoginUser] = useState(null);
     return (
         <>
             <h1>🗓️ React 9일차: Context API와 전역 상태 공유</h1>
@@ -15,23 +21,20 @@ export default function Day9App() {
                 <Profile />
                 <Settings />
             </UserContext.Provider>
-            <br />
-            <h4>🎨 React 다크모드 예제</h4>
-            <br />
             <ThemeContext.Provider value={{theme, setTheme}}>
-                <div style={{
-                    backgroundColor: theme === 'dark' ? '#222' : '#fff',
-                    color: theme === 'dark' ? '#fff' : '#000',
-                    padding: '20px',
-                    borderRadius: '5px',
-                    minHeight: '100vh'
-                }}>
-                    <h3>🌙 다크모드</h3>
-                    <p>현재 테마: {theme}</p>
-                    <button onClick={() => setTheme('light')}>라이트 모드</button>
-                    <button onClick={() => setTheme('dark')}>다크 모드</button>
-                </div>
+                <h4>🎨 React 다크모드 예제</h4>
+                <p>현재 테마: {theme}</p>
+                <ThemeToggle />
+                <ThemeBox />
             </ThemeContext.Provider>
+            <br />
+            <AuthContext.Provider value={{loginUser, setLoginUser}}>
+                <div>
+                    <h4>🔐 React 로그인 상태 관리</h4>
+                    <AuthStatus />
+                    <AuthButtons />
+                </div>
+            </AuthContext.Provider>
         </>
     );
 }
