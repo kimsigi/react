@@ -2,7 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 
 export default function SearchUsers() {
-    const [keyword, setKeyword] = useState(null);
+    const [keyword, setKeyword] = useState("");
     const [loading, setLoading] = useState(true);
     const [usres, setUsers] = useState([]);
 
