@@ -5,6 +5,7 @@ import Day12App from "./components/day12/Day12App";
 import Day13App from "./components/day13/Day13App";
 import Day14App from "./components/day14/Day14App";
 import Day15App from "./components/day15/Day15App";
+import Day16App from "./components/day16/Day16App";
 import Day2App from "./components/day2/Day2App";
 import Day3App from "./components/day3/Day3App";
 import Day4App from "./components/day4/Day4App";
@@ -17,6 +18,7 @@ import Day9App from "./components/day9/Day9App";
 export default function App() {
   return (
     <>
+{/*
       <h1>🗓️ React 학습 1일차: 개발 환경 + React 개요 + JSX + 컴포넌트 기초</h1>
       <Day1App />
       <hr /><hr />
@@ -47,6 +49,9 @@ export default function App() {
       <Day14App />
       <hr /><hr />
       <Day15App />
+      <hr /><hr />
+*/}
+      <Day16App />
     </>
   )
 }
