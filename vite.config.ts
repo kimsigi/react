@@ -9,6 +9,6 @@ export default defineConfig({
     alias: {
       '@': path.resolve(__dirname, './src'),
     },
-    extensions: ['.js', '.jsx', '.ts', '.tsx'], // 타입스크립트도 포함해주는 게 일반적
+    extensions: ['.js', '.jsx', '.ts', '.tsx', '.css'], // 타입스크립트도 포함해주는 게 일반적
   },
 })
