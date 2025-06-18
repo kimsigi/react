@@ -26,6 +26,7 @@ import Day25App from "./components/day25/Day25App.tsx";
 import Day26App from "./components/day26/Day26App.tsx";
 import Day27App from "./components/day27/Day27App.tsx";
 import Day28App from "./components/day28/Day28App.tsx";
+import Day29App from "./components/day29/Day29App.tsx";
 
 export default function App() {
   return (
@@ -86,8 +87,10 @@ export default function App() {
       <hr /><hr />
       <Day27App />
       <hr /><hr />
+      <Day28App />
+      <hr /><hr />
         */}
-        <Day28App />
+        <Day29App />
     </>
   )
 }
